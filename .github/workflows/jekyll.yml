@@ -23,4 +23,4 @@ jobs:
       - uses: jp-rad/jekyll-action@2.0.3-plantuml
         env:
           # Ideally use GITHUB_TOKEN but it gives error for this action.
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
